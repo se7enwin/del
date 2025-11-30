@@ -1,0 +1,70 @@
+<!-- Syntax -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Basic Js/React Syntax Examples from html </title>
+<meta charset='UTF-8'>
+<meta name='viewport' containt='width=device-width, initial-scale=1.0'>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script> 
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+</head>
+<body>
+<div id='one'></div>
+<div id='two'></div>
+<div id='three'></div>
+<div id='four'></div>
+
+<script>
+function Fn(atr){console.log(atr);}		
+Fn('Conventional Funcion');
+</script>
+<script>
+((atr)=>console.log(atr))('Arrow Funcion');
+</script>
+<script>
+class Cl{constructor(atr){this.atr=atr}greetings(){return console.log(this.atr);}};
+const obj00=new Cl('Conventional Class');
+obj00.greetings();
+</script>
+<script>
+function FnCmJs(atr){return React.createElement('h3',null,atr)};
+const tag01=document.getElementById('one');
+const run01=ReactDOM.createRoot(tag01);
+run01.render(FnCmJs('FnCmJs'));
+</script>
+<script>
+class ClCmJs extends React.Component {constructor(atr){super(atr)} render(){
+return React.createElement('h3',null,this.props)}}
+const tag02=document.getElementById('two');
+const run02=ReactDOM.createRoot(tag02);
+const obj02=new ClCmJs('ClCmJs');
+run02.render(obj02.render());
+
+</script>
+
+<script type="text/babel">
+
+function FnCmJsx (props) { return (<h3> {props.fncmjsx} </h3>) }
+const tag03=document.getElementById('three');
+const txt03='FnCmJsx';
+const run03=ReactDOM.createRoot(tag03);
+run03.render(<FnCmJsx fncmjsx={txt03} />)
+</script> 
+
+<script type="text/babel">
+
+class ClCmJsx extends React.Component{
+
+constructor(props){super(props)}
+
+render(){
+return (<h3>{this.props.clcmjsx}</h3>)
+
+}}
+
+const tag04=document.getElementById('four');
+const run04=ReactDOM.createRoot(tag04);
+const txt04='ClCmJsx';
+run04.render(<ClCmJsx clcmjsx={txt04} />);
+</script>
