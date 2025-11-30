@@ -1,3 +1,25 @@
+# Two Version
+Content
+-------
+
+* New Files
+  * /package.json
+  * /package-look.json automatic
+  * /src/index.js
+  * /src/App.jsx
+  * /node etc(delete version)
+
+* Modified Files
+  * index.html
+  * README.md
+
+* Development Files
+  * index.js render App.jsx
+  * App.jsx return tag for render
+  * package.json versions for current linux
+     
+
+
 # One Version
 Content
 --------
