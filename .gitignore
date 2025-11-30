@@ -1,0 +1,4 @@
+# Node Modules Folder
+node_module
+# Api Keys
+.env
