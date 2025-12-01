@@ -64,7 +64,7 @@ Content
 
 * Development
 
-  * Initialice and configured git with your new repository.
+  * Initialize and configure git with your new repository.
     > https://github.com/se7enwin/del
   * Add ignore folder and files for git.
   * Create README.md and fillup it.
