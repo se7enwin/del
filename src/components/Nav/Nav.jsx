@@ -1,9 +1,18 @@
 
 
-import SetNav from './setNav.jsx';
+import SetNav from './SetNav.jsx';
 
-export default function Nav(){
+export default function Nav(props) {
 
 
-return ( <SetNav /> )
+    return (
+
+        <div>
+
+            <SetNav cors={props.cors} getApi={props.getApi} />
+
+
+        </div>
+    )
+
 }
